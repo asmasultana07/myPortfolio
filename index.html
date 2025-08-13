@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asma Sultana</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div><span class="text-2xl font-semibold">Asma Sultana</span></div>
+      <div class="hidden md:block">
+        <ul class="nav-items">
+          <li><a href="#home" class="no-smoothState no-single-work">Home</a></li>
+          <li><a href="#about" class="no-smoothState no-single-work">About</a></li>
+          <li><a href="#skill" class="no-smoothState no-single-work">Skills</a></li>
+          <li><a href="#project" class="no-smoothState no-single-work">Projects</a></li>
+          <li><a href="#contact" class="no-smoothState no-single-work">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Mobile view  -->
+      <button id="menu-btn" class="md:hidden text-2xl">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+    </nav>
+<!-- -->
+    <div id="mobile-menu" class="hidden md:hidden flex flex-col  px-4 pb-4 
+      fixed top-0 right-0 w-2/5 max-w-xs h-1/2 bg-white/50 backdrop-blur-lg shadow-lg  transform ease-in-out z-50 space-y-6">
+      <button id="close-btn" class="self-end text-3xl">&times;</button>
+      <ul class="font-semibold">
+          <li><a href="#home" class="block px-4 py-3 lightgray hover:text-white">Home</a></li>
+          <li><a href="#about" class="block px-4 py-3 lightgray hover:text-white">About</a></li>
+          <li><a href="#skill" class="block px-4 py-3 lightgray hover:text-white">Skills</a></li>
+          <li><a href="#project" class="block px-4 py-3 lightgray hover:text-white">Projects</a></li>
+          <li><a href="#contact" class="block px-4 py-3 lightgray hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+  </header>
+
+
+  <script src="main.js"></script>
+</body>
+</html>
