@@ -21,9 +21,9 @@
 
 </head>
 
-<body>
+<body class="md:px-[120px]">
   <header>
-    <nav>
+    <nav class="px-4 border-b md:border-r md:border-l md:border-[plum]">
       <div><span class="text-2xl font-semibold">Asma Sultana</span></div>
       <div class="hidden md:block">
         <ul class="nav-items">
@@ -41,21 +41,46 @@
       </button>
 
     </nav>
-<!-- -->
-    <div id="mobile-menu" class="hidden md:hidden flex flex-col  px-4 pb-4 
+    <!-- -->
+    <div id="mobile-menu"
+      class="hidden md:hidden flex flex-col px-4 pb-4 
       fixed top-0 right-0 w-2/5 max-w-xs h-1/2 bg-white/50 backdrop-blur-lg shadow-lg  transform ease-in-out z-50 space-y-6">
       <button id="close-btn" class="self-end text-3xl">&times;</button>
       <ul class="font-semibold">
-          <li><a href="#home" class="block px-4 py-3 lightgray hover:text-white">Home</a></li>
-          <li><a href="#about" class="block px-4 py-3 lightgray hover:text-white">About</a></li>
-          <li><a href="#skill" class="block px-4 py-3 lightgray hover:text-white">Skills</a></li>
-          <li><a href="#project" class="block px-4 py-3 lightgray hover:text-white">Projects</a></li>
-          <li><a href="#contact" class="block px-4 py-3 lightgray hover:text-white">Contact</a></li>
-        </ul>
-      </div>
+        <li><a href="#home" class="block px-4 py-3 lightgray hover:text-white">Home</a></li>
+        <li><a href="#about" class="block px-4 py-3 lightgray hover:text-white">About</a></li>
+        <li><a href="#skill" class="block px-4 py-3 lightgray hover:text-white">Skills</a></li>
+        <li><a href="#project" class="block px-4 py-3 lightgray hover:text-white">Projects</a></li>
+        <li><a href="#contact" class="block px-4 py-3 lightgray hover:text-white">Contact</a></li>
+      </ul>
+    </div>
   </header>
 
+  <section id="home">
+    <div class="container">
+      <div class="home_image animate__animated animate__bounceInLeft">
+        <img src="./assets/1.picture.jpg" alt="home image" />
+      </div>
+      <div class="home_content">
+        <h1>
+          <span class="hi_text"> Hi</span>, I am
+          <span class="name_text">Asma Sultana </span>
+        </h1>
+        <h2>Frontend Developer</h2>
+      </div>
+    </div>
+  </section>
+
+  <main>
+
+  </main>
+
+
+  <footer>
+
+  </footer>
 
   <script src="main.js"></script>
 </body>
+
 </html>

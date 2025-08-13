@@ -15,7 +15,7 @@ html{
 }
 
 body{
-    background: radial-gradient(circle at center, #483d8b, #61265c);
+    background: linear-gradient(90deg, #300a44, #464965);
     color: white;
     scroll-behavior: smooth;
     width:100%;
@@ -27,19 +27,31 @@ body{
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 20px 100px;
+    padding: 20px 5px;
     font-size: 18px;
-    /* position: relative; */
+    /* position: fixed; */
     background-color: rgba(48, 1, 48, 0.9);
-    
 }
+.hidden {
+    padding:auto;
+}
+
 .nav-items {
     display: flex;
     justify-content: space-between;
     color: rgb(153, 152, 152);
     font-weight: 700;
     gap: 50px;
+    margin-right: 50px;
 }
 .nav-items li a:hover{
     color: white;
+}
+
+/* home style */
+
+#home {
+    background-image: ;
+    border-bottom: 4px solid darkslateblue;
+    padding: 17rem 0;
 }
