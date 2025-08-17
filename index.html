@@ -21,9 +21,9 @@
 
 </head>
 
-<body class="md:px-[120px]">
-  <header>
-    <nav class="px-4 border-b md:border-r md:border-l md:border-[plum]">
+<body class="px-5 md:px-[120px]">
+  <header class="">
+    <nav class="flex justify-between items-center w-full p-5 fixed top-0 right-0 z-50  border-b md:border-r md:border-l md:border-[plum]">
       <div><span class="text-2xl font-semibold">Asma Sultana</span></div>
       <div class="hidden md:block">
         <ul class="nav-items">
@@ -56,22 +56,23 @@
     </div>
   </header>
 
-  <section id="home">
-    <div class="container">
-      <div class="home_image animate__animated animate__bounceInLeft">
-        <img src="./assets/1.picture.jpg" alt="home image" />
-      </div>
-      <div class="home_content">
-        <h1>
-          <span class="hi_text"> Hi</span>, I am
-          <span class="name_text">Asma Sultana </span>
-        </h1>
-        <h2>Frontend Developer</h2>
-      </div>
-    </div>
-  </section>
 
   <main>
+    <section id="home">
+      <div class="md:flex md:items-center mt-18  gap-6 md:border-b-[4px] border-[darkslateblue] pt-[20px]">
+        <div class="home_image animate__animated animate__bounceInLeft w-50% h-50% md:border-none border-b-[4px] border-[darkslateblue]">
+          <img  src="./assets/hero.png" alt="home image" 
+            class="object-cover "/>
+        </div>
+        <div class="grid place-items-start mt-18 md:gap-5 ">
+          <h1 class="text-2xl">Hello, <span class="">My Name is
+            <span class="text-7xl text-blue-300">Asma Sultana</span> 
+          </h1>
+          <h3 class="text-2xl overflow-hidden border-r border-plum-600">I'm a passionate 
+            <span class="typing text-blue-300 inline-block border-b-2 border-b-blue-300">Frontend Developer</span></h3>
+        </div>
+      </div>
+    </section>
 
   </main>
 
@@ -80,7 +81,10 @@
 
   </footer>
 
-  <script src="main.js"></script>
+  <!-- JS Files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/script.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
