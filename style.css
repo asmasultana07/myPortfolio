@@ -10,8 +10,11 @@
     box-sizing: border-box;
 }
 html{
-    font-family: "Google Sans Code",  monospace;
+    font-family: "Google Sans Code";
 }
+ .font-inter {
+            font-family: 'Inter';
+        }
 
 body{
     background: linear-gradient(90deg, #300a44, #464965);
@@ -26,7 +29,7 @@ body{
 
 nav {
     font-size: 18px;  
-    background-color: rgba(48, 1, 48, 0.9);
+    background-color: #300130e6;
 }
 
 .nav-items {
@@ -39,11 +42,9 @@ nav {
 }
 .nav-items li a:hover{
     color: white;
+    /* background-color: #483d8b; */
 }
 
 /* home style */
 
 
-#home h2 {
-     animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite; 
-}
