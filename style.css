@@ -1,3 +1,5 @@
+/* font style */
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
 
 /* colors */
 .lightgray {
@@ -9,10 +11,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
+.font-code {
     font-family: "Google Sans Code";
 }
- .font-inter {
+.font-inter {
             font-family: 'Inter';
         }
 
@@ -42,7 +44,7 @@ nav {
 }
 .nav-items li a:hover{
     color: white;
-    /* background-color: #483d8b; */
+    background-color: #483d8b;
 }
 
 /* home style */
