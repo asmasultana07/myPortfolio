@@ -8,7 +8,7 @@
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-
+  
   <!-- style sheet -->
   <link rel="stylesheet" href="style.css" />
 
@@ -85,7 +85,7 @@
 
     <section id="aboutme">
       <div class="py-[150px] flex flex-col gap-10">
-        <div class="grid md:grid-cols-2">
+        <div class="grid md:grid-cols-2 justify-items-center items-start gap-8">
           <div>
             <h2 class="text-3xl font-semibold mb-8 text-blue-300" >ABOUT ME</h2>
             <p>Hey, I'm Asma, a tech enthusiast and Computer Science and 
@@ -98,7 +98,7 @@
               from Figma. 
             </p>
           </div>
-          <div class="flex justify-center items-center hidden md:block">
+          <div class="hidden md:block">
               <img src="assets/web-dev1.png" class="animate-pulse">
           </div>
         </div>
@@ -117,8 +117,8 @@
                 <span class="absolute left-[-9px] top-0 w-4 h-4 bg-blue-300 rounded-full"></span>
                 <p class="text-gray-300 mt-2">
                   BSc in Computer Science And Engineering <br>
-                  University of Asia Pacific, Dhaka, Bangladesh. <br>
-                  CGPA: 3.59 out of 4.00
+                  University of Asia Pacific, Dhaka, Bangladesh.
+                  <p class="text-gray-300 mt-1">CGPA: 3.59 out of 4.00</p>
                 </p> 
                 <span class="bg-gray-500 text-white px-3 py-1 font-semibold text-sm inline-block mt-3">
                   2020 - 2024
@@ -154,6 +154,113 @@
 
         </div>
 
+      </div>
+    </section>
+
+    <!-- Skill content -->
+    <section id="skill">
+      <div class="py-[150px] flex flex-col gap-10">
+        <h2 class="text-3xl font-semibold mb-8 text-blue-300">MY SKILLS</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Programming Languages -->
+          <div class="w-[350px] h-[220px] p-6 bg-[#300130e6] rounded-[4px]  
+                      shadow-[inset_0_1px_2px_rgba(255,255,255,0.7),inset_0_-2px_2px_rgba(255,255,255,0.7),inset_2px_0_8px_rgba(255,255,255,0.7),inset_-2px_0_8px_rgba(255,255,255,0.7)]">
+            <h4 class="text-xl text-gray-300 font-bold mb-16">Programming Languages</h4>
+            <ul class="grid grid-cols-3 gap-4">
+              <li class="bg-[#5c2c5ce6] px-6 rounded-sm ">C</li>
+              <li class="bg-[#5c2c5ce6] px-6 rounded-sm ">C++</li>
+              <li class="bg-[#5c2c5ce6] px-6 rounded-sm col-span-1 col-end-2">R</li>
+              <li class="bg-[#5c2c5ce6] px-4 rounded-sm col-span-1 col-end-3">Python</li>
+            </ul>
+          </div>
+          <!-- AI/ML  Libraries-->
+          <div class="w-[350px] h-[220px] p-6 bg-[#300130e6] rounded-[4px]  
+                      shadow-[inset_0_1px_2px_rgba(255,255,255,0.7),inset_0_-2px_2px_rgba(255,255,255,0.7),inset_2px_0_8px_rgba(255,255,255,0.7),inset_-2px_0_8px_rgba(255,255,255,0.7)]">
+            <h4 class="text-xl text-gray-300 font-bold mb-5">Data Science & ML Libraries</h4>
+            <ul class="flex flex-wrap gap-4">
+              <li class="bg-[#5c2c5ce6] px-4 rounded-sm ">Pandas</li>
+              <li class="bg-[#5c2c5ce6] px-4 rounded-sm ">Numpy</li>
+              <li class="bg-[#5c2c5ce6] px-4 rounded-sm ">Matplotlib</li>
+              <li class="bg-[#5c2c5ce6] px-4 rounded-sm ">PyTorch</li>
+              <li class="bg-[#5c2c5ce6] px-4 rounded-sm ">TensorFlow</li>
+              <li class="bg-[#5c2c5ce6] px-4 rounded-sm ">Scikit-Learn</li>
+            </ul>
+          </div>
+          <!-- Web Development -->
+          <div class="w-[350px] h-[220px] p-6 bg-[#300130e6] rounded-[4px]  
+                      shadow-[inset_0_1px_2px_rgba(255,255,255,0.7),inset_0_-2px_2px_rgba(255,255,255,0.7),inset_2px_0_8px_rgba(255,255,255,0.7),inset_-2px_0_8px_rgba(255,255,255,0.7)]">
+            <h4 class="text-xl text-gray-300 font-bold mb-10">Web Development</h4>
+            <ul class="flex flex-wrap gap-4">
+              <li class="bg-[#5c2c5ce6] px-6 rounded-sm ">HTML</li>
+              <li class="bg-[#5c2c5ce6] px-6 rounded-sm ">CSS</li>
+              <li class="bg-[#5c2c5ce6] px-6 rounded-sm ">TailwindCSS</li>
+              <li class="bg-[#5c2c5ce6] px-6 rounded-sm ">JavaScript</li>
+            </ul>
+          </div>
+          <!-- Data Tools -->
+          <div class="w-[350px] h-[220px] p-6 bg-[#300130e6] rounded-[4px]  
+                      shadow-[inset_0_1px_2px_rgba(255,255,255,0.7),inset_0_-2px_2px_rgba(255,255,255,0.7),inset_2px_0_8px_rgba(255,255,255,0.7),inset_-2px_0_8px_rgba(255,255,255,0.7)]">
+            <h4 class="text-xl text-gray-300 font-bold mb-12">Databases & Data Tools</h4>
+            <ul class="flex flex-wrap gap-4">
+              <li class="bg-[#5c2c5ce6] px-8 rounded-sm ">MySQL</li> 
+              <li class="bg-[#5c2c5ce6] px-6 rounded-sm ">Power BI</li>
+              <li class="bg-[#5c2c5ce6] px-4 rounded-sm ">Database</li>
+            </ul>
+          </div>
+          <!-- Version Control -->
+          <div class="w-[350px] h-[220px] p-6 bg-[#300130e6] rounded-[4px]  
+                      shadow-[inset_0_1px_2px_rgba(255,255,255,0.7),inset_0_-2px_2px_rgba(255,255,255,0.7),inset_2px_0_8px_rgba(255,255,255,0.7),inset_-2px_0_8px_rgba(255,255,255,0.7)]">
+            <h4 class="text-xl text-gray-300 font-bold mb-12">Version Control</h4>
+            <ul class="flex flex-warp gap-4">
+              <li class="bg-[#5c2c5ce6] px-8 rounded-sm ">Git</li>
+              <li class="bg-[#5c2c5ce6] px-6 rounded-sm ">GitHub</li>
+            </ul>
+          </div>
+          <!-- Design -->
+           <div class="w-[350px] h-[220px] p-6 bg-[#300130e6] rounded-[4px]  
+                      shadow-[inset_0_1px_2px_rgba(255,255,255,0.7),inset_0_-2px_2px_rgba(255,255,255,0.7),inset_2px_0_8px_rgba(255,255,255,0.7),inset_-2px_0_8px_rgba(255,255,255,0.7)]">
+            <h4 class="text-xl text-gray-300 font-bold mb-12">Design & Visualization</h4>
+            <ul class="flex flex-warp gap-4">
+              <li class="bg-[#5c2c5ce6] px-8 rounded-sm ">Figma</li>
+              <li class="bg-[#5c2c5ce6] px-6 rounded-sm ">Pixco</li>
+              <li class="bg-[#5c2c5ce6] px-6 rounded-sm ">Canva</li>
+              <li class="bg-[#5c2c5ce6] px-6 rounded-sm ">LaTeX</li>
+              <li class="bg-[#5c2c5ce6] px-6 rounded-sm ">Microsoft Excel</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- project content -->
+    <section id="project">
+      <div>
+        <div>
+          <h2 class="text-3xl font-semibold mb-8 text-blue-300">MY CREATIVE PROJECTS</h2>
+          <div class="flex gap-10  font-semibold">
+            <a href="#" class="tab-btn" data-tab="all">ALL</a>
+            <a href="#" class="tab-btn" data-tab="web-app">Web Design</a>
+            <a href="#" class="tab-btn" data-tab="my-design">Graphic Design</a>
+            <a href="#" class="tab-btn" data-tab="machine-learning">AI/ML</a>
+          </div>
+
+          <div>
+            <div id="all" class="tab-content">
+
+            </div>
+            <div id="web-app" class="tab-content">
+
+            </div>
+            <div id="my-design" class="tab-content">
+
+            </div>
+            <div id="machine-learning" class="tab-content">
+
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
