@@ -34,3 +34,31 @@ tabs.forEach(tab => {
     document.getElementById(tab.dataset.tab).classList.remove("hidden");
   });
 });
+
+// project
+// tab details visible
+
+const tabItem = document.querySelectorAll(".tab-btnItem");
+const contentItem = document.querySelectorAll(".tab-contentItem");
+
+tabItem.forEach(tab => {
+  tab.addEventListener("click", (e) => {
+    e.preventDefault(); 
+    
+    tabItem.forEach(btn => btn.classList.remove("border-b-2", "border-blue-300"));
+    contentItem.forEach(content => content.classList.add("hidden"));
+
+    // Active tab highlight 
+    tab.classList.add("border-b-2", "border-blue-300");
+    if (tab.dataset.tab === "all") {
+      contentItem.forEach(content => content.classList.remove("hidden"));
+    } 
+    else {
+      document.getElementById(tab.dataset.tab).classList.remove("hidden");
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelector('.tab-btnItem[data-tab="all"]').click();
+});

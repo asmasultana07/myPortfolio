@@ -25,7 +25,7 @@
       <div class="hidden md:block">
         <ul class="nav-items">
           <li><a href="#home" class="no-smoothState no-single-work">Home</a></li>
-          <li><a href="#aboutme" class="no-smoothState no-single-work">About</a></li>
+          <li><a href="#aboutme" id="aboutme-link" class="no-smoothState no-single-work">About</a></li>
           <li><a href="#skill" class="no-smoothState no-single-work">Skills</a></li>
           <li><a href="#project" class="no-smoothState no-single-work">Projects</a></li>
           <li><a href="#contact" class="no-smoothState no-single-work">Contact</a></li>
@@ -240,14 +240,16 @@
         <div>
           <h2 class="text-3xl font-semibold mb-14 text-blue-300">MY CREATIVE PROJECTS</h2>
           <div class="flex gap-4 md:gap-8 mb-8 font-semibold">
-            <a href="#" class="tab-btn" data-tab="all">ALL</a>
-            <a href="#" class="tab-btn" data-tab="web-app">Web Design</a>
-            <a href="#" class="tab-btn" data-tab="my-design">Graphic Design</a>
-            <a href="#" class="tab-btn" data-tab="machine-learning">AI/ML</a>
+            <a href="#" class="tab-btnItem border-b-2 border-purple-600" data-tab="all">ALL</a>
+            <a href="#" class="tab-btnItem" data-tab="web-app">Web Design</a>
+            <!-- <a href="#" class="tab-btnItem" data-tab="my-design">Graphic Design</a> -->
+            <a href="#" class="tab-btnItem" data-tab="machine-learning">AI/ML</a>
           </div>
 
           <div class="flex flex-col gap-x-10 gap-y-6">
-            <div id="all" class="tab-content">
+            <!-- <div id="all" class="tab-contentItem">
+            </div> -->
+            <div id="web-app" class="tab-contentItem hidden">
               <div class="grid grid-cols-1 md:grid-cols-3  gap-x-10 gap-y-6">
                 <div id="project1" class="flex flex-col p-6 bg-[#2e0537e6] border-2 border-violet-800 transition-transform hover:scale-[1.02] hover:shadow-[0_0_20px_lightblue] rounded-lg">
                   <div>
@@ -485,13 +487,10 @@
                 </div>
               </div>
             </div>
-            <div id="web-app" class="tab-content">
+            <!-- <div id="my-design" class="tab-contentItem hidden">
 
-            </div>
-            <div id="my-design" class="tab-content">
-
-            </div>
-            <div id="machine-learning" class="tab-content">
+            </div> -->
+            <div id="machine-learning" class="tab-contentItem hidden">
               <div class="grid grid-cols-1 md:grid-cols-3  gap-x-10 gap-y-3">
                 <div id="ml-project7" class="flex flex-col p-6 bg-[#2e0537e6] border-2 border-violet-800 transition-transform hover:scale-[1.02] hover:shadow-[0_0_20px_lightblue] rounded-lg">
                   <div>
@@ -532,7 +531,7 @@
                 </div>
               </div>
               <div class="grid grid-cols-1 md:grid-cols-3  gap-x-10 gap-y-3">
-                <div id="ml-project7" class="flex flex-col p-6 bg-[#2e0537e6] border-2 border-violet-800 transition-transform hover:scale-[1.02] hover:shadow-[0_0_20px_lightblue] rounded-lg">
+                <div id="ml-project2" class="flex flex-col p-6 bg-[#2e0537e6] border-2 border-violet-800 transition-transform hover:scale-[1.02] hover:shadow-[0_0_20px_lightblue] rounded-lg">
                   <div>
                     <img src="assets/ml-project2.png" 
                       class="border-2 border-violet-500 rounded-2xl">
@@ -544,15 +543,11 @@
                     <ul class="flex flex-wrap gap-3 mt-3">
                       <li class="bg-[#1d0123e6] px-4 py-[4px] border border-violet-800 rounded-md ">R</li>
                       <li class="bg-[#1d0123e6] px-4 py-[4px] border border-violet-800 rounded-md ">Python</li>
-                      <li class="bg-[#1d0123e6] px-4 py-[4px] border border-violet-800 rounded-md ">Numpy</li>
-                      <li class="bg-[#1d0123e6] px-4 py-[4px] border border-violet-800 rounded-md ">Pandas</li>
-                      <li class="bg-[#1d0123e6] px-4 py-[4px] border border-violet-800 rounded-md ">Scikit-Learn</li>
-                      <li class="bg-[#1d0123e6] px-4 py-[4px] border border-violet-800 rounded-md ">Matplotlib</li>
-                      <li class="bg-[#1d0123e6] px-4 py-[4px] border border-violet-800 rounded-md ">ML Models</li>
+                      <li class="bg-[#1d0123e6] px-4 py-[4px] border border-violet-800 rounded-md ">Seaborn</li>
                     </ul>
                   </div>
                   <div class="grid grid-cols-2 gap-4 p-3 ">
-                    <a href="https://rpubs.com/asma__/ap2" target="_blank" rel="noopener noreferrer"
+                    <a href="https://github.com/asmasultana07/Data-Visualization.git" target="_blank" rel="noopener noreferrer"
                     class="rounded p-[10px] text-center  bg-white/20">
                       <button class="inline-flex items-center gap-2 text-[14px] font-semibold py-[8px] px-3 rounded-md bg-gradient-to-r from-[#3c1c9c] via-[#623ac0] to-[#b091f8]
                       transition-transform hover:scale-[1.02] hover:shadow-[0_0_10px_lightblue]">
@@ -560,7 +555,7 @@
                         <img src="assets/icon-preview2.png" class="w-5 h-5 bg-white/30 rounded"  alt="icon">
                     </button>
                     </a>
-                    <a href="https://github.com/asmasultana07/Heart-Disease-Analysis.git" target="_blank" rel="noopener noreferrer"
+                    <a href="https://github.com/asmasultana07/Data-Management-Visualization-with-R-programming.git" target="_blank" rel="noopener noreferrer"
                     class="rounded p-[10px] text-center  bg-white/20  group-hover:right-[120%] duration-700">
                       <button class="inline-flex items-center gap-2 text-[14px] font-semibold py-[8px] px-2 rounded-md bg-gradient-to-r from-[#3c1c9c] via-[#623ac0] to-[#b091f8]
                       transition-transform duration-300 hover:scale-[1.02] hover:shadow-[0_0_10px_lightblue]">
@@ -577,6 +572,11 @@
         </div>
       </div>
     </section>
+
+    <!-- Contact Me -->
+     <section id="contact">
+
+     </section>
 
   </main>
 
