@@ -9,41 +9,61 @@
 
 <body>
 
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 bg-[#0d0b1f]">
+  
+  <!-- Single Box -->
+  <div class="bg-[#1a1735] rounded-xl overflow-hidden shadow-md">
+    <!-- Image div -->
+    <div class="h-40 w-full">
+      <img src="https://picsum.photos/400/300" 
+           alt="preview" 
+           class="w-full h-full object-cover" />
+    </div>
 
-    <div class="border w-[200px] h-[400px]">
-        <div class="flex flex-col sm:flex-row items-center gap-4 bg-[#0d0b1f] p-4">
-  <!-- Preview Now Button -->
-  <a href="#"
-     class="flex items-center justify-center gap-2 px-5 py-2 text-sm font-medium 
-            rounded-md bg-gradient-to-r from-[#6a11cb] to-[#2575fc] 
-            text-white border border-white/20 
-            shadow-[0_0_10px_rgba(106,17,203,0.4)] 
-            hover:scale-105 transition-all duration-300">
-    Preview Now
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-         stroke="currentColor" class="w-4 h-4">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-    </svg>
-  </a>
+    <!-- Content div -->
+    <div class="p-4 text-white">
+      <h3 class="text-lg font-semibold">Box Title</h3>
+      <p class="text-sm text-gray-300 mt-1">Some short description goes here.</p>
+    </div>
 
-  <!-- View Details Button -->
-  <a href="#"
-     class="flex items-center justify-center gap-2 px-5 py-2 text-sm font-medium 
-            rounded-md bg-gradient-to-r from-[#6a11cb] to-[#b721ff] 
-            text-white border border-white/20 
-            shadow-[0_0_10px_rgba(106,17,203,0.4)] 
-            hover:scale-105 transition-all duration-300">
-    View Details
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-         stroke="currentColor" class="w-4 h-4">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-    </svg>
-  </a>
+    <!-- Button div -->
+    <div class="p-4 flex gap-2">
+      <a href="#"
+         class="flex-1 flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium 
+                rounded-md bg-gradient-to-r from-purple-600 to-purple-400 text-white 
+                border border-white/10 shadow-[0_0_8px_rgba(106,17,203,0.4)] 
+                hover:scale-105 transition-all duration-300">
+        Preview
+      </a>
+      <a href="#"
+         class="flex-1 flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium 
+                rounded-md bg-gradient-to-r from-purple-400 to-purple-300 text-white 
+                border border-white/10 shadow-[0_0_8px_rgba(106,17,203,0.4)] 
+                hover:scale-105 transition-all duration-300">
+        Details
+      </a>
+    </div>
+  </div>
+
+  <!-- Copy this box more times -->
+  <div class="bg-[#1a1735] rounded-xl overflow-hidden shadow-md">
+    <div class="h-40 w-full">
+      <img src="https://picsum.photos/400/300?random=2" class="w-full h-full object-cover" />
+    </div>
+    <div class="p-4 text-white">
+      <h3 class="text-lg font-semibold">Another Box</h3>
+      <p class="text-sm text-gray-300 mt-1">Another description.</p>
+    </div>
+    <div class="p-4 flex gap-2">
+      <a href="#" class="flex-1 px-4 py-2 text-sm rounded-md bg-gradient-to-r from-purple-600 to-purple-400 text-white text-center">Preview</a>
+      <a href="#" class="flex-1 px-4 py-2 text-sm rounded-md bg-gradient-to-r from-purple-400 to-purple-300 text-white text-center">Details</a>
+    </div>
+  </div>
+
+  <!-- Add more boxes (up to 6/7) -->
+
 </div>
 
-    </div>
 </body>
 
 </html>
